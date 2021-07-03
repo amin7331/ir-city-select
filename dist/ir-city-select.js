@@ -42,7 +42,7 @@ $(document).ready(function() {
 var loadProvinces = function() {
     var element = $(this);
     element.empty();
-    element.append($('<option></option>').attr('value', 'empty'));
+//     element.append($('<option></option>').attr('value', 'empty'));
     $.each(data, function(province, list) {
         var option = $('<option></option>').attr('value', province).text(province);
         element.append(option);
