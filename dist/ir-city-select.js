@@ -1,5 +1,4 @@
 var data = {
-  "استان": ["شهر",],
     "آذربايجان شرقي": ["اسكو", "اهر", "ایلخچی", "باسمنج", "بستان آباد", "بناب", "تبريز", "تسوج", "جلفا", "خسروشهر", "سراب", "سهند", "شبستر", "صوفیان", "مراغه", "مرند", "ملكان", "ممقان", "ميانه", "هاديشهر", "هريس", "هشترود", "ورزقان"],
     "آذربايجان غربي": ["اروميه", "اشنويه", "بوكان", "تكاب", "خوي", "سر دشت", "سلماس", "شاهين دژ", "ماكو", "مهاباد", "مياندوآب", "نقده", "پلدشت", "پيرانشهر", "چالدران"],
     "اردبيل": ["اردبيل", "خلخال", "مشگين شهر", "نمين", "نير", "پارس آباد", "گرمي"],
@@ -41,8 +40,7 @@ $(document).ready(function() {
 
 var loadProvinces = function() {
     var element = $(this);
-    element.empty();
-//     element.append($('<option></option>').attr('value', 'empty'));
+    element.append($('<option selected disabled> استان</option>').attr('value', 'استان'));
     $.each(data, function(province, list) {
         var option = $('<option></option>').attr('value', province).text(province);
         element.append(option);
